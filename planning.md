@@ -16,11 +16,12 @@ Gain points when ball hits player's walls
 Players' paddles move
 
 # Organization
-Block class
-	isPlayer1
-	isPlayer2
-	isWall
+Block class - base class
+	abstract Paddle class
+		movement methods
+	abstract Wall class
 Ball class
+	collision method
 	scored - returns true if scored
 	whoScored - returns the number of the player who scored
 Scoreboard class
