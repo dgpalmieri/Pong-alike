@@ -6,7 +6,7 @@
 import sys
 import pygame
 import os
-import block, paddle, wall, ball, scoreboard
+import block, ball, scoreboard
 
 
 UP      =  1
