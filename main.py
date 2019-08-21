@@ -15,6 +15,45 @@ DOWN    = -1
 
 
 def playGame():
+    while True:
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                sys.exit()
+
+        movePaddles()
+        moveBall()
+
+
+def startScreen():
+
+    while True:
+        # display splash screen
+
+        movePaddles()
+
+        # if spacebar is pressed
+        break
+
+
+def movePaddles():
+    pass
+    #            elif event.type == pygame.K_DOWN:
+    #                if event.key == pygame.K_w:
+    #                    player.move = UP
+    #                elif event.key == pygame.K_s:
+    #                    player_move = DOWN
+    #                elif event.key == pygame.K_w and event.key == pygame.K_s:
+    #                    player_move = NEUTRAL
+    #                elif event.key == pygame.K_w:
+    #                    player_move = UP
+    #                elif event.key == pygame.K_s:
+    #                    player_move = DOWN
+    #                elif event.key == pygame.K_w and event.key == pygame.K_s:
+    #                    player_move = NEUTRAL
+
+
+def moveBall():
     pass
 
 
@@ -32,29 +71,11 @@ def main():
     paddle = pygame.image.load(os.path.join(images_path, "paddle.png"))
     paddleRect = paddle.get_rect()
 
-    while True:
-
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
-#            elif event.type == pygame.K_DOWN:
-#                if event.key == pygame.K_w:
-#                    player.move = UP
-#                elif event.key == pygame.K_s:
-#                    player_move = DOWN
-#                elif event.key == pygame.K_w and event.key == pygame.K_s:
-#                    player_move = NEUTRAL
-#                elif event.key == pygame.K_w:
-#                    player_move = UP
-#                elif event.key == pygame.K_s:
-#                    player_move = DOWN
-#                elif event.key == pygame.K_w and event.key == pygame.K_s:
-#                    player_move = NEUTRAL
-
-        playGame()
-        screen.fill(black)
-        screen.blit(paddle, paddleRect)
-        pygame.display.flip()
+    startScreen()
+    playGame()
+    screen.fill(black)
+    screen.blit(paddle, paddleRect)
+    pygame.display.flip()
 
 
 if __name__ == "__main__":
