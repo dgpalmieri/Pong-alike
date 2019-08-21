@@ -35,6 +35,8 @@ Down
 abstract Paddle class - contains movement methods
 		
 abstract Wall class
+
+abstract Background class
 	
 ### Ball class
 
