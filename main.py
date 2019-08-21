@@ -57,6 +57,10 @@ def moveBall():
     pass
 
 
+def updateDisplay():
+    pass
+
+
 def main():
     pygame.init()
 
