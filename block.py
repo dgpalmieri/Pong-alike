@@ -8,6 +8,9 @@ class Block:
     def isCollidable(self):
         return True
 
+    # convention: [ Top Left, Top Right, Bottom Left, Bottom Right ]
+    coordinates = [0, 0, 0, 0]
+
 
 class Wall(Block):
     pass
