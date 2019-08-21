@@ -5,7 +5,8 @@
 
 
 class Block:
-    pass
+    def isCollidable(self):
+        return True
 
 
 class Wall(Block):
@@ -17,4 +18,5 @@ class Paddle(Block):
 
 
 class Background(Block):
-    pass
+    def isCollidable(self):
+        return False
