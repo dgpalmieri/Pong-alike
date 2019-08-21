@@ -30,6 +30,18 @@ Neutral
 
 Down
 
+### Methods
+
+playGame() - executes all game functions
+
+startScreen() - displays start screen, allows paddle movement
+
+movePaddles() - handles actual paddle movement
+
+moveBall() - handles actual Ball movement (may remove)
+
+updateDisplay() - called after every game-changing process
+
 ### Block class - base class
 
 abstract Paddle class - contains movement methods
